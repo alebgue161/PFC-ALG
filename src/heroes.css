@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+}
+
+
+
+.logo1{
+    width:5em;
+}
+
+.menu{
+    background-color: transparent;
+    border-radius: 40px;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
+body{
+    font-family: "Poppins" !important;
+}
+
+
+.juega{
+    background-color: #F06414 !important;
+}
+
+.fondo:hover{
+    background-color: #C5C4C9 !important;
+}
+
+
+.juega:hover{
+    background-color: #f39e58 !important;
+}
+  
+body{
+    background-color: #377FD4;
+}
+
+.bdg img {
+    width: 40px;
+    height: auto;
+  }
+
+  .juega2{
+    background-color: #F06414 !important;
+    width: 100%;
+}
+
+.fondo:hover{
+    background-color: #C5C4C9 !important;
+}
+
+
+.juega:hover{
+    background-color: #f39e58 !important;
+}
+
+.canvabg{
+    background-color: #EBEFF4;
+}
+
+.canvaenla:hover{
+    background-color: #DFE3E8 !important;
+}
+
+a.btn.btn-link {
+    padding-left: 0 !important;
+  }  
+
+  .card {
+    transition: transform 0.3s ease-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+

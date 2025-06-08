@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Proyecto BootStrap - Página Héroes - Álvaro Lebrón Guerra
+    </title>
+    <link rel="stylesheet" href="src/css/bootstrap.css" />
+    <link rel="stylesheet" href="src/heroes.css" />
+    <link
+      rel="icon"
+      href="Media/Overwatch_2_logo.svg(1).png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid"> 
+      <div class="menu m-4 rounded sticky-top">
+        <header>
+          <div class="row">
+            <div
+              class=" logo d-none col-lg-1 d-lg-flex justify-content-center bg-white rounded-start-2"
+            >
+              <div class="dropdown d-inline-block">
+                <a
+                  class="btn dropdown-toggle border-0"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="Media/Blizzard_Logo.png"
+                    alt="Logo Blizzard"
+                    class="logo1"
+                  />
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="https://www.blizzard.com/"
+                      >Visita Blizzard.com</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="https://www.blizzard.com/games"
+                      >Todos los juegos</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="nav col-12 col-lg-11 d-lg-flex justify-content-around align-items-center bg-dark-subtle rounded-end-2"
+            >
+              <div class="canva d-block justify-content-start d-lg-none">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg></button>
+
+              <div class="canvabg offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+              <div class="offcanvas-header d-flex align-items-center justify-content-center">
+                <a href="http://www.blizzard.com/"><img src="Media/Blizzard_Logo.png" alt="" width="100"></a>
+              </div>
+              <div class="offcanvas-header d-flex align-items-center justify-content-center">
+                <a href="index.html"><img src="Media/ow_logo_breakpoint.avif" alt="" width="400"></a>
+              </div>
+              <div class="offcanvas-body">
+                <div class="accordion" id="accordionPanelsStayOpen1">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button canvabg border-0 px-0" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Información del juego
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapse1" class="accordion-collapse collapse canvabg">
+                      <div class="accordion-body">
+                        <div class="canvaenla"><a href="https://overwatch.blizzard.com/start" class="btn btn-link text-black text-decoration-none">Resumen</a></div>
+                        <div class="canvaenla"><a href="https://overwatch.blizzard.com/media" class="btn btn-link text-black text-decoration-none">Multimedia</a></div>
+                        <div class="canvaenla"><a href="https://overwatch.blizzard.com/news/patch-notes" class="btn btn-link text-black text-decoration-none">Notas del parche</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="canvaenla"><a href="heroes.html" class="btn btn-link text-black text-decoration-none">Héroes</a></div>
+                <div class="canvaenla"><a href="https://overwatch.blizzard.com/season" class="btn btn-link text-black text-decoration-none">Temporada</a></div>
+                <div class="canvaenla"><a href="https://overwatch.blizzard.com/news" class="btn btn-link text-black text-decoration-none">Noticias</a></div>
+                <!--  -->
+                <div class="accordion" id="accordionPanelsStayOpen2">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button canvabg border-0 px-0" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Comunidad
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse canvabg">
+                      <div class="accordion-body">
+                        <div class="canvaenla"><a href="https://eu.forums.blizzard.com/es/overwatch/" class="btn btn-link text-black text-decoration-none">Foros</a></div>
+                        <div class="canvaenla"><a href="https://overwatch.blizzard.com/search" class="btn btn-link text-black text-decoration-none">Perfiles de jugadores</a></div>
+                        <div class="canvaenla"><a href="#" class="btn btn-link text-black text-decoration-none disabled">ESPORTS</a></div>
+                        <div class="canvaenla"><a href="https://esports.overwatch.com/en-us/news/2024-owcs-emea-na-competitive-details" class="btn btn-link text-black text-decoration-none">Esports de Overwatch 2024 </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="accordion" id="accordionPanelsStayOpen3">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button canvabg border-0 px-0" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Tienda
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse canvabg">
+                      <div class="accordion-body">
+                        <div class="canvaenla"><a href="https://gear.blizzard.com/collections/overwatch" class="btn btn-link text-black text-decoration-none">Tienda<svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13"
+                          height="13"
+                          fill="currentColor"
+                          class="bi bi-arrow-up-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"
+                          />
+                        </svg></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <a class="juega2 btn mt-4 border-0 text-white py-3" href="https://download.battle.net/es-es?product=ow&blzcmp=ow_gamesite" role="button">Juega Ya</a>
+              </div>
+            </div>
+              </div>
+              <div class="logo_OW d-none d-lg-flex">
+                <a href="index.html">
+                  <img
+                    src="Media/Overwatch_2_logo.svg(1).png"
+                    alt="Logo Overwatch"
+                    width="55px"
+                  />
+                                </div>
+                </a>
+              <div class="dropdown-center align-items-center">
+                <button
+                  class="fondo btn d-none d-lg-block bg-transparent text-dark border-0"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Información del juego
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Resumen</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://overwatch.blizzard.com/media"
+                      >Multimedia</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://overwatch.blizzard.com/news/patch-notes"
+                      >Notas del parche</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="fondo btn d-none d-lg-block bg-transparent text-black border-0"
+                href="heroes.html"
+                role="button"
+                >Héroes</a
+              >
+              <a
+                class="fondo btn d-none d-lg-block bg-transparent text-black border-0"
+                href="https://overwatch.blizzard.com/es-es/season/"
+                role="button"
+                >Temporada</a
+              >
+              <a
+                class="fondo btn d-none d-lg-block bg-transparent text-black border-0"
+                href="https://overwatch.blizzard.com/es-es/news/"
+                role="button"
+                >Noticias</a
+              >
+              <div class="dropdown-center">
+                <button
+                  class="fondo btn d-none d-lg-block dropdown-toggle bg-transparent text-black border-0"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Comunidad
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://eu.forums.blizzard.com/es/overwatch/"
+                      >Foros</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://overwatch.blizzard.com/search"
+                      >perfiles de jugadores</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item disabled" href="#">ESPORTS</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://esports.overwatch.com/en-us/news/2024-owcs-emea-na-competitive-details"
+                      >Esports de Overwatch 2024</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-center">
+                <button
+                  class="fondo btn d-none d-lg-block dropdown-toggle bg-transparent text-black border-0"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tienda
+                </button>
+                <ul class=" dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://gear.blizzard.com/collections/overwatch"
+                      >Tienda
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        fill="currentColor"
+                        class="bi bi-arrow-up-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://overwatch.blizzard.com/es-es/search/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-search text-black d-none d-lg-block"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </a>
+              <a class="juega btn mt-2 mb-2 d-lg-flex border-0 text-white" href="https://download.battle.net/es-es?product=ow&blzcmp=ow_gamesite" role="button">Juega Ya</a>
+            </div>
+          </div>
+                </div>
+        </header>
+      <main class="d-flex row justify-content-around">
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/ana"><img src="Media/ana.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/healer.png" alt=""></span>
+                <span class="align-items-center">ANA</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/ashe"><img src="Media/ashe.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">ASHE</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/baptiste"><img src="Media/Baptsite.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/healer.png" alt=""></span>
+                <span class="align-items-center">BAPTISTE</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/bastion"><img src="Media/bastion.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">BASTION</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/brigitte"><img src="Media/brig.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/healer.png" alt=""></span>
+                <span class="align-items-center">BRIGITTE</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/cassidy"><img src="Media/cass.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">CASSIDY</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/dva"><img src="Media/dva.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/tank.png" alt=""></span>
+                <span class="align-items-center">D.VA</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/doomfist"><img src="Media/doom.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/tank.png" alt=""></span>
+                <span class="align-items-center">DOOMFIST</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/echo"><img src="Media/echo.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">ECHO</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/genji"><img src="Media/genji.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">GENJI</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/hanzo"><img src="Media/hanzo.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">HANZO</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/junker-queen"><img src="Media/junker.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/tank.png" alt=""></span>
+                <span class="align-items-center">JUNKER QUEEN</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/junkrat"><img src="Media/junkrat.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">JUNKRAT</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/kiriko"><img src="Media/kiriko.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/healer.png" alt=""></span>
+                <span class="align-items-center">KIRIKO</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/lucio"><img src="Media/lucio.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/healer.png" alt=""></span>
+                <span class="align-items-center">LUCIO</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/mei"><img src="Media/mei.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">MEI</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/mercy"><img src="Media/mercy.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/healer.png" alt=""></span>
+                <span class="align-items-center">MERCY</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/moira"><img src="Media/moira.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/healer.png" alt=""></span>
+                <span class="align-items-center">MOIRA</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/orisa"><img src="Media/orisa.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/tank.png" alt=""></span>
+                <span class="align-items-center">ORISA</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/pharah"><img src="Media/phara.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">PHARA</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/ramattra"><img src="Media/ram.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/tank.png" alt=""></span>
+                <span class="align-items-center">RAMATTRA</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/reaper"><img src="Media/reaper.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">REAPER</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/reinhardt"><img src="Media/rein.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/tank.png" alt=""></span>
+                <span class="align-items-center">REINHARDT</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/roadhog"><img src="Media/road.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/tank.png" alt=""></span>
+                <span class="align-items-center">ROADHOG</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/sigma"><img src="Media/sigma.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/tank.png" alt=""></span>
+                <span class="align-items-center">SIGMA</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/sojourn"><img src="Media/soj.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">SOJOURN</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/sombra"><img src="Media/sombra.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">SOMBRA</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/symmetra"><img src="Media/symm.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">SYMMETRA</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/torbjorn"><img src="Media/torb.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">TORBJÖRN</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/tracer"><img src="Media/tracer.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">TRACER</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/venture"><img src="Media/venture.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">VENTURE</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/widowmaker"><img src="Media/widow.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/dps.png" alt=""></span>
+                <span class="align-items-center">WIDOWMAKER</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/winston"><img src="Media/winston.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/tank.png" alt=""></span>
+                <span class="align-items-center">WINSTON</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/wrecking-ball"><img src="Media/ww.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/tank.png" alt=""></span>
+                <span class="align-items-center">WRECKING BALL</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/zarya"><img src="Media/zarya.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/tank.png" alt=""></span>
+                <span class="align-items-center">ZARYA</span>
+               </div>
+            </div>
+          </div>
+          <div class="card mb-5" style="width: 18rem;">
+            <a href="https://overwatch.blizzard.com/heroes/zenyatta"><img src="Media/zen.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <div class="texto_tarjeta d-flex justify-content-center align-items-center">
+                <span class="bdg badge"><img src="Media/healer.png" alt=""></span>
+                <span class="align-items-center">ZENYATTA</span>
+               </div>
+            </div>
+        </div>
+      </main>
+      </body>
+    </div>
+  <script src="src/js/bootstrap.bundle.js"></script>
+</html>
