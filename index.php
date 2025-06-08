@@ -27,7 +27,7 @@
     </style>
   </head>
   <body>
-      <video muted loop autoplay src="/Media/fondo.mp4" type="video/mp4"></video>
+      <video muted loop autoplay src="./Media/fondo.mp4" type="video/mp4"></video>
     <div class="container-fluid">
       <div class="menu m-4 rounded sticky-top">
         <header>

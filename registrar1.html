@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear cuenta Overwatch ALG</title>
+  <!-- Bootstrap CSS -->
+  <link href="src/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tu CSS custom -->
+  <link href="src/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar estático adaptado de tu index -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
+    <div class="container">
+      <a class="navbar-brand" href="index.php">
+        <img src="media/blizzard-logo.svg" alt="Blizzard" class="logo1">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link poppins-medium" href="info.php">Información del juego</a></li>
+          <li class="nav-item"><a class="nav-link poppins-medium" href="heroes.html">Héroes</a></li>
+          <li class="nav-item"><a class="nav-link poppins-medium" href="temporada.php">Temporada</a></li>
+        </ul>
+        <form class="d-flex me-3">
+          <button class="btn btn-link p-0" type="button">
+            <img src="media/search-icon.svg" alt="Buscar" width="20">
+          </button>
+        </form>
+        <a href="login1.html" class="btn juega">Juega Ya</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Formulario registro -->
+  <div class="container mt-5" style="max-width: 500px;">
+    <h2 class="text-center mb-4 poppins-bold">Crear cuenta</h2>
+    <form action="registro2.php" method="post">
+      <div class="mb-3">
+        <label for="nombre" class="form-label poppins-medium">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label poppins-medium">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="usuario@ejemplo.com" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label poppins-medium">Contraseña</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="••••••••" required>
+      </div>
+      <div class="mb-3">
+        <label for="password2" class="form-label poppins-medium">Repite la contraseña</label>
+        <input type="password" class="form-control" id="password2" name="password2" placeholder="••••••••" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100 poppins-medium">Registrar</button>
+    </form>
+    <p class="text-center mt-3 poppins-regular">
+      ¿Ya tienes cuenta? <a href="login1.html">Inicia sesión aquí</a>
+    </p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="src/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- Fin del formulario registro -->
